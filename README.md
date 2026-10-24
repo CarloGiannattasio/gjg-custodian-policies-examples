@@ -1,4 +1,12 @@
-# gjg-custodian-polices-examples
+# gjg-custodian-policies-examples
+
+[![Custodian policies (Moto)](https://github.com/CarloGiannattasio/gjg-custodian-policies-examples/actions/workflows/custodian-policies.yml/badge.svg)](https://github.com/CarloGiannattasio/gjg-custodian-policies-examples/actions/workflows/custodian-policies.yml)
+
+Staged idle cleanups for RDS, load balancers, and IAM roles, plus an EC2 off-hours schedule. Each stage notifies before it marks, stops, or deletes.
+
+Opt-out tags skip a resource. Slack and email alerts go through c7n-mailer.
+
+The pipeline validates every policy and dry-runs it with Moto, so tests need no AWS credentials.
 
 Example [Cloud Custodian](https://cloudcustodian.io/) policies you can copy, adapt, and run in your own AWS (and other cloud) accounts.
 
